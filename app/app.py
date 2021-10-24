@@ -30,11 +30,11 @@ client = ScraperAPIClient('8a40568ad90a53e817126fb569a0cb5a')
 # @app.route('/lol', methos=['GET'])
 # def respond_this():
 #     answer = respond(word)
-#
-# @app.route('/')
-# def index():
-#     return '.'
 
-#
-# if __name__ == '__main__':
-#     app.run(threaded=True)
+@app.route('/')
+def index():
+    return '.'
+
+
+if __name__ == '__main__':
+    app.run(threaded=True)
